@@ -15,7 +15,7 @@ How does hospice utilization and payment vary across geography and provider char
 - **Reporting year:** 2023
 - **Level:** Hospice provider
 - **Data type:** Public provider-level healthcare data
-- **Source:** https://data.cms.gov/provider-data/topics/hospice-care
+- **Source:** [Medicare Post-Acute Care Utilization - Hospice by Geography and Provider](https://data.cms.gov/provider-summary-by-type-of-service/medicare-post-acute-care-hospice/medicare-post-acute-care-utilization-hospice-by-geography-and-provider)
 - Raw data is not included in this repository.
 
 ## Tools
