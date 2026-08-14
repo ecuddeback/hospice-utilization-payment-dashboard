@@ -10,10 +10,12 @@ How does hospice utilization and payment vary across geography and provider char
 
 ## Data
 
-- Source: Centers for Medicare & Medicaid Services (CMS)
-- Dataset: Medicare Post-Acute Care Utilization - Hospice by geography and Provider
-- Level: Provider/geography
-- Format: CSV
+- **Source:** Centers for Medicare & Medicaid Services (CMS)
+- **Dataset:** Medicare Post-Acute Care Utilization — Hospice by Geography/Provider
+- **Reporting year:** 2023
+- **Level:** Hospice provider
+- **Data type:** Public provider-level healthcare data
+- **Source:** https://data.cms.gov/provider-data/topics/hospice-care
 - Raw data is not included in this repository.
 
 ## Tools
@@ -25,29 +27,41 @@ How does hospice utilization and payment vary across geography and provider char
 
 ## Analysis
 
-- Hospice utilization
-- Beneficiaries served
-- Medicare payments
-- Average payment per beneficiary
-- Provider characteristics
-- Geographic variation
+- Total hospice beneficiaries
+- Total Medicare payments
+- Total service days
+- Average Medicare payment per beneficiary
+- Top 10 states by hospice beneficiaries
+- Top 10 states by Medicare payments
+- Provider-level relationship between Medicare payments and service days
+- State and summary-category filtering
 
 ## Dashboard
-_Screenshot will be added after the dashboard is complete._
+![Hospice Utilization Dashboard](screenshots/hospice_dashboard.png)
 
 ## Key Findings
-_To be completed after analysis._
+- Hospice utilization and Medicare payments vary substantially across states.
+- A small number of large providers account for substantially higher beneficiary volume and Medicare payments than many smaller providers.
+- Provider service volume and Medicare payments show a broad distribution, with several large providers standing apart from the majority of providers.
+- Interactive state and summary-category filters allow users to explore utilization patterns at a more granular level.
 
 ## Data Preparation
 
-Data was cleaned and transformed using Power Query, including data-type validation, handling missing/suppressed values, and preparation of fields for analysis.
+Data was prepared in Power Query before analysis. Steps included:
+
+- Reviewed and standardized data types
+- Renamed CMS field names for readability
+- Prepared provider, beneficiary, payment, and utilization fields for analysis
+- Preserved missing/suppressed CMS values rather than treating them as zero
 
 ## Limitations
 
-This analysis describes patterns in the published CMS dataset and does not establish causal relationships.
+This analysis uses publicly available provider-level CMS data and describes reported utilization and payment patterns. It does not establish causation or evaluate individual patient outcomes.
+
+CMS data may contain suppressed or missing values for privacy and reporting purposes.
 
 ## Project Structure
 
-- `screenshots/ ` - dashboard and data-preparation screenshots
-- `data/` - information about the source dataset
+- `Hospice_Utilization_Dashboard.pbix` — Power BI dashboard
+- `screenshots/hospice_dashboard.png` — dashboard screenshot
 - `README.md` - project documentation
