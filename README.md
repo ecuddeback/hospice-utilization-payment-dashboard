@@ -39,7 +39,7 @@ Because the dataset contains multiple reporting levels (NATION, STATE, and PROVI
 - Interactive state and reporting-level filters
 
 ## Dashboard
-![Hospice Utilization Dashboard](hospice_dashboard.png)
+![Hospice Utilization Dashboard](screenshots/hospice_dashboard.png)
 
 ## Key Findings
 - Provider-level records represented approximately 2 million reported beneficiaries, $25.06 billion in Medicare payments, and 135 million service days in the filtered dataset.
